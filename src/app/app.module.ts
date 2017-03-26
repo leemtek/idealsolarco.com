@@ -3,18 +3,23 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+// Custom Modules
+import { ReCaptchaModule } from 'angular2-recaptcha';
+
+// Components
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    EmailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ReCaptchaModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [EmailComponent]
 })
 export class AppModule { }
