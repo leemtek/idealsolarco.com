@@ -1,13 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 // Custom Modules
 import { ReCaptchaModule } from 'angular2-recaptcha';
 
-// Components
-import { EmailComponent } from './email/email.component';
+import { EmailComponent } from "./email/email.component";
 
 @NgModule({
   declarations: [
@@ -17,6 +16,7 @@ import { EmailComponent } from './email/email.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule,
     ReCaptchaModule
   ],
   providers: [],

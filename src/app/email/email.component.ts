@@ -26,25 +26,25 @@ declare var $:any;
             </div>
 
             <!-- Form -->
-            <form id="onepageContact" #contactForm="ngForm" (ngSubmit)="mdSend()" class="onepage block form-inline margin-top60">
+            <form #contactForm="ngForm" (ngSubmit)="mdSend()" class="onepage block form-inline margin-top60">
                 <div class="row">
                     <div class="col-md-4">
                         <input type="text" placeholder="NAME *" class="fullwidth" 
-                            id="contact_name" name="contact_name" title="Name"
+                            name="contact_name"
                             required
                             [(ngModel)]="objUserDetails.strName"
                         />
                     </div>
                     <div class="col-md-4">
                         <input type="email" placeholder="EMAIL *" class="fullwidth" 
-                            name="newsletter_email" id="newsletter_email" title="Email"
+                            name="email"
                             required
                             [(ngModel)]="objUserDetails.strEmail"
                         />
                     </div>
                     <div class="col-md-4">
                         <input type="text" placeholder="SUBJECT" class="fullwidth" 
-                            name="contact_subject" id="contact_subject" title="subject"
+                            name="contact_subject"
                             [(ngModel)]="objUserDetails.strSubject"
                         />
                     </div>
@@ -53,7 +53,7 @@ declare var $:any;
                 <div class="row">
                     <div class="col-md-12">
                         <textarea rows="5" placeholder="MESSAGE *" class="fullwidth"
-                            name="contact_comment" id="contact_comment"
+                            name="contact_comment"
                             required
                             [(ngModel)]="objUserDetails.strComment"
                         ></textarea>
@@ -91,24 +91,26 @@ export class EmailComponent {
     } // constructor
 
     mdSend() {
-        // Disable submit button and indicate "Please wait...".
-        $('#contact_submit').text('Please Wait...');
-        $('#contact_submit').removeClass('btn-default').addClass('btn-info');
-        $("#contact_submit").prop('disabled', true);
+        document.getElementById("contact_submit").textContent = "Please Wait...";
+        document.getElementById("contact_submit").classList.remove("btn-primary");
+        document.getElementById("contact_submit").classList.add("btn-info");
+        (<HTMLInputElement> document.getElementById("contact_submit")).disabled = true;
 
         // Attempt to send email.
         this.emailService.mdSendData(this.objUserDetails)
             .subscribe(data => {
                 if (data.sent === "yes") {
                     // Success
-                    $('#contact_submit').text('Email Sent.  Thanks! :)');
-                    $('#contact_submit').removeClass('btn-info').addClass('btn-success');
-                    $("#contact_submit").prop('disabled', true);
+                    document.getElementById("contact_submit").textContent = "Email Sent.  Thanks! :)";
+                    document.getElementById("contact_submit").classList.remove("btn-info");
+                    document.getElementById("contact_submit").classList.add("btn-success");
+                    (<HTMLInputElement> document.getElementById("contact_submit")).disabled = true;
                 } else {
                     // Something went wrong.
-                    $('#contact_submit').text('Please try again.');
-                    $('#contact_submit').removeClass('btn-info').addClass('btn-danger');
-                    $("#contact_submit").prop('disabled', false);
+                    document.getElementById("contact_submit").textContent = "Please try again.";
+                    document.getElementById("contact_submit").classList.remove("btn-info");
+                    document.getElementById("contact_submit").classList.add("btn-danger");
+                    (<HTMLInputElement> document.getElementById("contact_submit")).disabled = false;
                 } // else
             }) // subscribe()
         ; // sendEmailService.mdSendData()
