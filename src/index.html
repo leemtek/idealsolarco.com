@@ -1,14 +1,558 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Idealsolarco</title>
-    <base href="/">
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Ideal Solar</title>
+        <base href="/">
+        
+		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<meta name="description" content="LeemTek Template" />
+		<meta name="Author" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-    <app-root>Loading...</app-root>
-</body>
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/demo/favicon.ico" />
+
+		<!-- WEB FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800%7CDosis:300,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+
+		<!-- CORE CSS -->
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/sky-forms.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/weather-icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/line-icons.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/owl-carousel/owl.pack.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/animate.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/flexslider.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/revolution-slider.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/layerslider.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/header-default.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/footer-default.css" rel="stylesheet" type="text/css" />
+		<link href="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+        <link href="./assets/css/override.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/css/override-responsive.css" rel="stylesheet" type="text/css" />
+
+		<!-- Morenizr -->
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/modernizr.min.js"></script>
+
+		<!--[if lte IE 8]>
+			<script src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<!-- 
+		Available body classes: 
+			smoothscroll			= enable chrome browser smooth scroll
+			grey 					= grey content background
+			boxed 					= boxed style
+			pattern1 ... pattern10 	= background pattern
+
+		Background Image - add to body: 
+			data-background="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/boxed_background/1.jpg"
+
+		Examples: 
+			<body class="smoothscroll grey boxed pattern3">
+			<body class="smoothscroll boxed" data-background="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/boxed_background/1.jpg">
+	-->
+	<body class="smoothscroll">
+
+		<div id="wrapper">
+
+			<!-- Top Nav -->
+			<header id="topNav" class="fixed">
+				<div class="container">
+					<!-- Logo -->
+					<a class="logo onepage" href="index.html">
+						<img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/logo.png" height="50" alt="" />
+					</a>
+
+					<!-- Mobile Menu Button -->
+					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<!-- Top Nav -->
+					<div class="navbar-collapse nav-main-collapse collapse pull-right">
+						<nav class="nav-main">
+
+							<ul id="topMain" class="nav nav-pills nav-main">
+								<li><a class="scrollTo" href="#wrapper">HOME <span>welcome</span></a></li>
+								<li><a class="scrollTo" href="#about">ABOUT <span>about us</span></a></li>
+								<li><a class="scrollTo" href="#services">SERVICES <span>our offer</span></a></li>
+                                <li><a class="scrollTo" href="#promise">PROMISE <span>our commitment</span></a></li>
+								<li><a class="scrollTo" href="#contact">CONTACT <span>information</span></a></li>
+							</ul>
+
+						</nav>
+					</div>
+					<!-- /Top Nav -->
+
+				</div><!-- /.container -->
+			</header>
+			<!-- /Top Nav -->
+
+
+
+
+			<!-- REVOLUTION SLIDER -->
+			<div class="onepage-slider-offset">
+
+				<div class="slider fullwidthbanner-container roundedcorners">
+					<div class="fullscreenbanner ">
+						<ul class="hide">
+
+							<!-- SLIDE  -->
+							<li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+
+                                
+                                
+								<img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/1x1.png" data-lazyload="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/banner/solar-panels.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+                                <!-- <div class="black-transparent-bg"></div> -->
+                                
+                                <div class="tp-caption small_light_white lfb ltt bg bgbar black-transparent-bg"
+                                    data-x="center" data-hoffset="0"
+                                    data-y="center" data-voffset="0"
+                                    data-speed="600"
+                                    data-start="0"
+                                    data-easing="Power4.easeOut"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-elementdelay="0.01"
+                                    data-endelementdelay="0.1"
+                                    data-endspeed="500"
+                                    data-endeasing="Power4.easeIn">
+                                    &nbsp;
+                                    
+                                </div>
+
+                                <div class="tp-caption very_large_text lfb ltt title"
+                                    data-x="center" data-hoffset="0"
+                                    data-y="center" data-voffset="-90"
+                                    data-speed="600"
+                                    data-start="800"
+                                    data-easing="Power4.easeOut"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-elementdelay="0.01"
+                                    data-endelementdelay="0.1"
+                                    data-endspeed="500"
+                                    data-endeasing="Power4.easeIn"><span class="stroke redtext">i·de·al</span>&nbsp;<span class="smaller stroke redtext">īˈdē(ə)l/ &nbsp;adjective</span>
+                                </div>
+
+                                <div class="tp-caption small_light_white lfb ltt caption1"
+                                    data-x="center" data-hoffset="0"
+                                    data-y="center" data-voffset="-40"
+                                    data-speed="600"
+                                    data-start="1000"
+                                    data-easing="Power4.easeOut"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-elementdelay="0.01"
+                                    data-endelementdelay="0.1"
+                                    data-endspeed="500"
+                                    data-endeasing="Power4.easeIn">satisfying one's conception of what is perfect; most suitable.
+                                </div>
+
+                                <div class="tp-caption small_light_white lfb ltt caption2"
+                                    data-x="center" data-hoffset="0"
+                                    data-y="center" data-voffset="40"
+                                    data-speed="600"
+                                    data-start="1200"
+                                    data-easing="Power4.easeOut"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-elementdelay="0.01"
+                                    data-endelementdelay="0.1"
+                                    data-endspeed="500"
+                                    data-endeasing="Power4.easeIn">
+                                    <div class="bound-text">
+                                        If you are looking for an experienced, efficient electrician with integrity and class, you are looking for Ideal.  <span class="redtext">Ideal</span> will 
+                                        get your project completed on-budget, on-time, every-time! Call us for a quote on your solar project or electrical 
+                                        needs today! <a href="tel://9255134704" class="redtext"><span class="dontbreak">(925) 513-4704</span></a>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="tp-caption very_large_text lfb ltt caption3"
+                                    data-x="center" data-hoffset="0"
+                                    data-y="center" data-voffset="110"
+                                    data-speed="600"
+                                    data-start="1500"
+                                    data-easing="Power4.easeOut"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-elementdelay="0.01"
+                                    data-endelementdelay="0.1"
+                                    data-endspeed="500"
+                                    data-endeasing="Power4.easeIn">
+                                    <span class="smaller more-letter-space">solar &nbsp;&nbsp;<span class="redtext">|</span>&nbsp;&nbsp; lighting &nbsp;&nbsp;<span class="redtext">|</span>&nbsp;&nbsp; electric</span>
+                                    
+                                </div>
+								
+                                
+                                    
+
+							</li>
+
+							
+
+						</ul>
+						<div class="tp-bannertimer"></div>
+					</div>
+				</div>
+
+			</div><!-- /topnav offset -->
+			<!-- /REVOLUTION SLIDER -->
+
+            <!-- ABOUT -->
+            <section id="about">
+                <div class="container">
+                    
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6"><!-- left image -->
+                            <!-- add class "controlls-over" if you need the button controlls over the image -->
+                            <div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": false, "transitionStyle":"fadeUp"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->
+                                <div>
+                                    <img alt="" class="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/solar-panel-2a.jpg">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/solar-panel-2b.jpg">
+                                </div>
+                            </div>
+                        </div><!-- /left image -->
+
+                        <div class="col-md-6 col-sm-6">
+                            <h3><strong>ABOUT</strong> IDEAL</h3>
+                            <ul class="spaced">
+                                <li>With over 20 years of experience in the electrical field <span class="red">Ideal</span> is a trusted source for all your electrical needs</li>
+                                <li>As a C-10 California state license contractor <span class="red">Ideal</span> takes great pride in offering the highest quality of work a and professional level of service</li>
+                                <li>We service both residential and commercial projects specializing in solar installations and repairs as well as lighting and electrical upgrades</li>
+                                <li>Our extensive experience and flexibility allows <span class="red">Ideal</span> to accommodate a great range of scopoe in project size and budget</li>
+                                <li><span class="red">Ideal's</span> solar solutions have saved our clients thousands of dollars and can do he same for you!</li>
+                            </ul>
+                            
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SERVICES -->
+            <section id="services" class="alternate">
+                <div class="container">
+
+                    <header class="text-center">
+
+                        <h3><strong>OUR</strong> SERVICES</h3>
+
+                        <div class="divider half-margins onepage center"><!-- lines divider --></div>
+
+                    </header>
+
+                    <div class="row">
+                    
+                        <div class="col-md-4">
+                        
+                            <figure>
+                                <img class="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/banner/banner-solar.jpg" alt="Solar" />
+                            </figure>
+
+                            <h4>Solar</h4>
+                            <p class="text-justify">
+                                <span class="red">Ideal</span> has a proven track record of successful solar installations for both residential and commercial projects. With substantial experience in the solar industry, our solar solutions have saved our clients considerable cash, provided peace of mind, helped them maintain their comfortable lifestyle and contributed to a better environment at the same time.<br/><br/>It really is a win-win-win!
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4">
+                        
+                            <figure>
+                                <img class="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/banner/banner-lighting.jpg" alt="Lighting" />
+                            </figure>
+
+                            <h4>Lighting</h4>
+                            <p class="text-justify">
+                                <span class="red">Ideal's</span> lighting solutions greatly improve the look, feel and value of your home. With little investment, simple lighting upgrades truly bring a fresh new look and <strong>wow</strong> factor to your home or business. Impress your guests and take pride in your space with our modern, efficient and cost-effective lighting solutions.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4">
+                        
+                            <figure>
+                                <img class="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/banner/banner-electrical.jpg" alt="Electrical" />
+                            </figure>
+
+                            <h4>Electrical</h4>
+                            <p class="text-justify">
+                                <span class="red">Ideal</span> can take care of all your residential and commercial servicing needs. The following are some electrical services that we can resolve for you quickly:<br/>
+                            </p>
+                            <ul>
+                                <li>High-effeciency lighting</li>
+                                <li>Main electrical panel and sub-panel upgrades</li>
+                                <li>Whole house and attic fans for comfort and energy efficiency</li>
+                                <li>Panels, breakers, ARC fault, devices, circuitry and troubleshooting</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    
+
+                </div>
+            </section>
+            <!-- /SERVICES -->
+
+            <!-- parallax -->
+            <section id="promise" class="nosectionpad">
+                <div class="parallax parallax-1" style="background-image:url(https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/panouri-1.jpg);">
+                    <span class="parallax-overlay"></span>
+
+                    <div class="container parallax-content">
+
+                        <div class="row">
+                            <div class="col-md-7 col-sm-7 text-left">
+                                <h1>Our Promise To You</h1>
+                                <h4 class="gray">Things we are commited to proving you, always...</h4>
+                            </div>
+
+                            <div class="col-md-5 col-sm-5">
+                            
+                                <!-- testimonial -->
+                                <div class="owl-carousel text-center fsize20" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "autoPlay": true}'>
+
+                                    <div class="text-left">
+                                        <p>
+                                            <strong class="red">Integrity</strong> - Ideal will always work with the highest level of integrity to deliver top-notch service as agreed, every time.
+                                        </p>
+                                        <p>
+                                            <strong class="red">Time</strong> - You value your time and so do we. We will arrive promptly as scheduled to complete your project in the most timely and efficient manner.
+                                        </p>
+                                        <p>
+                                            <strong class="red">Value</strong> - Our work will always bring value to your life. After all that is what we are here for - to bring value, solutions and light to your family and business.
+                                        </p>
+                                        <p>
+                                            We deliver on our commitments to you: on budget, on time, every time!
+                                        </p>
+                                        
+                                    </div>
+
+                                    
+
+                                </div>
+                                <!-- /testimonial -->
+
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+                
+            <!-- /parallax -->
+
+            <!-- JEFF -->
+            <section id="jeff">
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="col-sm-6">
+                            <header class="text-left">
+                                <h3>JEFF NICHOLS</h3>
+                            </header>
+                            <span class="double-spaced">
+                                <p>
+                                    With more than 20 years experience in the electrical field, Jeff Nichols is the authority on elecrical needs for homeowners and businesses throughout the Bay Area. Jeff and his team genuinely value your time and money. Jeff guides you through your solar and electrical decisions, helping you make informed and solid decisions on your energy needs. His experience and knowledge are invaluable. Ideal's clients are continually impressed with our teams high-level of service, knowledge, experience, and expertise.
+                                </p>
+                                <p>
+                                    We work to exceed your expectations all the time, every time! Give us a call today! (925) 513-4704
+                                </p>    
+                            </span>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="clearfix">
+                                <div class="img-constrain pull-right">
+                                    <img class="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/lt_images/jeff.jpg" alt="Jeff Nichols" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+			<!-- CONTACT -->
+			<section id="contact" class="alternate">
+				<div class="container">
+
+					<header class="text-center">
+
+						<h1 class="font-dosis">
+							CONTACT
+						</h1>
+
+						<div class="divider half-margins onepage center"><!-- lines divider --></div>
+
+					</header>
+
+					<div class="text-center">
+						<h4>Drop us a line or <strong>just say</strong> <em><strong>Hello!</strong></em></h4>
+						<p>
+							Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. <br />
+							Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.
+						</p>
+					</div>
+
+					<!-- Form -->
+					<form id="onepageContact" method="post" action="#" class="onepage block form-inline margin-top60">
+						<div class="row">
+							<div class="col-md-4"><input required class="fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME *" title="Name" /></div>
+							<div class="col-md-4"><input required class="fullwidth" type="email" name="newsletter_email" id="newsletter_email" value="" placeholder="EMAIL *" title="Email" /></div>
+							<div class="col-md-4"><input class="fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SUBJECT" title="subject" /></div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12"><textarea required class="fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGE *"></textarea></div>
+							<div class="col-md-12">
+								<button id="contact_submit" class="btn btn-primary">SEND MESSAGE</button>
+							</div>
+						</div>
+					</form>
+
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
+            
+            <app-root>Loading...</app-root>>
+
+			<!-- FOOTER -->
+            <footer id="footer">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- col #1 -->
+                        <div class="spaced col-md-4 col-sm-4">
+
+                            <h4>About <strong>Ideal</strong></h4>
+
+                            <p>
+                                If you are looking for an experienced, efficient electrician with integrity and class you are looking for ideal. Ideal will get your project complete on-budget, on-time, every-time!
+                            </p>
+
+                            <h3>(925) 513-4704</h3>
+
+                            <p class="block"><!-- social -->
+                                <a href="#" class="social fa fa-facebook"></a>
+                                <a href="#" class="social fa fa-twitter"></a>
+                                <a href="#" class="social fa fa-google-plus"></a>
+                                <a href="#" class="social fa fa-linkedin"></a>
+                            </p><!-- /social -->
+
+                        </div>
+                        <!-- /col #1 -->
+
+                        <!-- col #2 -->
+                        <div class="spaced col-md-8 col-sm-8">
+
+                            <div class="row">
+
+                                <div class="col-md-5 hidden-sm hidden-xs">
+                                    &nbsp;
+                                </div>
+
+                                <div class="col-md-3 hidden-sm hidden-xs">
+                                    <h4>Explore <strong>Us</strong></h4>
+                                    <ul class="list-unstyled nobordered">
+                                        <li><a class="block scrollTo" href="#wrapper"><i class="fa fa-angle-right"></i> Home</a></li>
+                                        <li><a class="block scrollTo" href="#about"><i class="fa fa-angle-right"></i> About Ideal</a></li>
+                                        <li><a class="block scrollTo" href="#services"><i class="fa fa-angle-right"></i> Services</a></li>
+                                        <li><a class="block scrollTo" href="#promise"><i class="fa fa-angle-right"></i> Our Promise</a></li>
+                                        <li><a class="block scrollTo" href="#jeff"><i class="fa fa-angle-right"></i> About Jeff Nichols</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h4>Secure <strong>Payment</strong></h4>
+                                    <p>Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet.</p>
+                                    <p> <!-- see https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/cc/ for more icons -->
+                                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/cc/Visa.png" alt="" />
+                                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/cc/Mastercard.png" alt="" />
+                                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/cc/Maestro.png" alt="" />
+                                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/images/cc/PayPal.png" alt="" />
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /col #2 -->
+
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <div class="copyright">
+                    <div class="container text-center fsize12">
+                        Web Development by <a href="http://getredbox.com" target="_blank" title="GetRedBox.com" class="copyright">GetRedBox.com</a> &bull; All Right Reserved &copy; Ideal. &nbsp;
+                        <!-- <a href="page-privacy.html" class="fsize11">Privacy Policy</a> &bull; 
+                        <a href="page-terms.html" class="fsize11">Terms of Service</a> -->
+                    </div>
+                </div>
+            </footer>
+            <!-- /FOOTER -->
+
+			<a href="#" id="toTop"></a>
+
+		</div><!-- /#wrapper -->
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/jquery.isotope.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/masonry.js"></script>
+
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/owl-carousel/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/knob/js/jquery.knob.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/flexslider/jquery.flexslider-min.js"></script>
+
+		<!-- REVOLUTION SLIDER -->
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/plugins/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/js/revolution_slider.js"></script>
+
+		<script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ideal-solar/template/js/scripts.js"></script>
+		
+	</body>
 </html>
