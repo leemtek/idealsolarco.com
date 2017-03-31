@@ -57,10 +57,10 @@ a.redtext {
 
 .stroke {
     text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+    -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
 }
 .tp-caption, .tp-caption * {
     font-family: 'Dosis';
@@ -79,10 +79,10 @@ a.redtext {
     line-height: 22px !important;
 }
 .tp-caption.caption1 {
-    /*top: 300px !important;*/*/
+    /*top: 300px !important;*/
 }
 .tp-caption.caption2 {
-    /*top: 346px !important;*/*/
+    /*top: 346px !important;*/
 }
 .bound-text {
     max-width: 860px;
