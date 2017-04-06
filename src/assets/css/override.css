@@ -50,6 +50,12 @@ ul.spaced {
 a.redtext {
     color: #ff0000 !important;
 }
+whitetext {
+    color: #fff !important;
+}
+a.whitetext {
+    color: #fff !important;
+}
 .more-letter-space {
     letter-spacing: 0 !important;
     font-weight: normal;
@@ -57,10 +63,10 @@ a.redtext {
 
 .stroke {
     text-shadow:
-    -1px -1px 0 #fff,  
-        1px -1px 0 #fff,
-        -1px 1px 0 #fff,
-        1px 1px 0 #fff;
+    -1px -1px 0 #ff0000,  
+        1px -1px 0 #ff0000,
+        -1px 1px 0 #ff0000,
+        1px 1px 0 #ff0000;
 }
 .tp-caption, .tp-caption * {
     font-family: 'Dosis';
@@ -111,3 +117,5 @@ a.redtext {
     Common Classes
 ================================================================== */
 .space-bottom-20 { padding-bottom: 20px; }
+
+.text-bold { font-weight: bold; }
