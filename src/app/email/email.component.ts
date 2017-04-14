@@ -19,10 +19,6 @@ declare var $:any;
 
             <div class="text-center">
                 <h4>Drop us a line or <strong>just say</strong> <em><strong>Hello!</strong></em></h4>
-                <p>
-                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. <br />
-                    Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.
-                </p>
             </div>
 
             <!-- Form -->

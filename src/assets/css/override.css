@@ -113,6 +113,15 @@ a.whitetext {
     font-size: 18px;
 }
 
+@media screen and (max-width: 770px) {
+    .double-spaced,
+    .double-spaced p {
+        line-height: 1.5;
+        font-family: 'Dosis';
+        font-size: 18px;
+    }
+}
+
 /* ==================================================================
     Common Classes
 ================================================================== */
