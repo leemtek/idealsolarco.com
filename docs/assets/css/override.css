@@ -125,6 +125,9 @@ a.whitetext {
 /* ==================================================================
     Common Classes
 ================================================================== */
+.margin-bottom-20 { margin-bottom: 20px; }
 .space-bottom-20 { padding-bottom: 20px; }
 
 .text-bold { font-weight: bold; }
+
+.display-block { display: block !important; }
