@@ -80,7 +80,7 @@ declare var $:any;
     providers: [EmailService]
 })
 export class EmailComponent {
-    private objUserDetails;
+    public objUserDetails;
     
     constructor(private emailService: EmailService) {
         this.objUserDetails = this.emailService.objSenderInfo;
