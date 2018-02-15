@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "rm -r docs/ && ng serve --prod && mv build docs"
+    "deploy": "rm -r docs/ && ng build --prod && mv dist docs"
   },
   "private": true,
   "dependencies": {
